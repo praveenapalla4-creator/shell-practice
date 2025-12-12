@@ -1,7 +1,7 @@
 #!/bin/bash
 
 echo "All varibales passed to the script :$@"
-# echo "All varaibales passed to the script: $*"
+echo "All varaibales passed to the script: $*"
 # echo "Script name: $0"
 # echo "Current directory: $PWD"
 # echo "Who is running this: $USER"
