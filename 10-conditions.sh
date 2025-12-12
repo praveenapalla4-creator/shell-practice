@@ -11,3 +11,5 @@ fi
 #-gt- greater tha
 #-eq - equal to
 # -ne  not equal to
+# -lt less than
+
