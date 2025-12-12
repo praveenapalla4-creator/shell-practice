@@ -10,4 +10,4 @@ echo "Sum is : ${SUM}"
 LEADERS={"Modi","Babu","Jagan"}
 echo "All Leader: ${LEADERS[@]}"
 echo "First Learder: ${LEADERS[0]}"
-echo "Second Leader: ${LEADERS[1]}"
+echo "Second Leader: ${LEADERS[10]}"
