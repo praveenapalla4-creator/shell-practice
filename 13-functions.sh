@@ -20,8 +20,8 @@ fi
 dnf install python3 -y
 
 if [ $? -ne 0 ]; then
-   echo " ERROR: Installing redis is fialure"
+   echo " ERROR: Installing python3 is fialure"
    exit 1
 else
-    echo "redis is installed"
+    echo "python3 is installed"
 fi
