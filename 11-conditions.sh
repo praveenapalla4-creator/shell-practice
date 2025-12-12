@@ -7,3 +7,6 @@ echo "Please enter the number"
  else 
     echo "Given number $NUMBER is odd"
 fi   
+
+## prime or not
+
