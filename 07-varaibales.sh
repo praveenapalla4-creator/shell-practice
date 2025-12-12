@@ -3,7 +3,7 @@
 DATE=$(date)
  echo "timestamp: $DATE"
 
- START_TIME=$(date+%s)
+ START_TIME=$(date+%S)
 
  END_TIME=$(date+%S)
 
