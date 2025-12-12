@@ -32,7 +32,7 @@ else
 fi 
 
 dnf list installed redis
-if[ $? -ne 0 ]; then 
+if [ $? -ne 0 ]; then 
    dnf install redis -y
 VALIDATE $? "REDIS"
 else 
@@ -40,7 +40,7 @@ else
 fi 
 
 dnf list installed python
-if[ $? -ne 0 ]; then 
+if [ $? -ne 0 ]; then 
     dnf install python -y
     VALIDATE $? "PYTHON"
 
