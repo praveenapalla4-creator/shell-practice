@@ -41,7 +41,7 @@ fi
 
 dnf list installed python
 if [ $? -ne 0 ]; then 
-    dnf install python -y
+    dnf install python3 -y
     VALIDATE $? "PYTHON"
 
 else 
