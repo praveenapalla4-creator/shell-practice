@@ -39,7 +39,7 @@ else
     echo -e "redis is already installed ..$Y SKIPPING $N"
 fi 
 
-dnf list installed python
+dnf list installed python3
 if [ $? -ne 0 ]; then 
     dnf install python3 -y
     VALIDATE $? "PYTHON"
