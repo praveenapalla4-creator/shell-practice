@@ -23,7 +23,7 @@ VALIDATE(){
    echo  -e " ERROR: Installing $2  ... $R is fialure $N" | tee -a $LOG_FILE
    exit 1
 else
-    echo -e "$2 ... $R is installed $N" | tee -a $LOG_FILE
+    echo -e "$2 ... $G is installed $N" | tee -a $LOG_FILE
 fi
 
 }
