@@ -2,12 +2,12 @@
 
 set -e
 
-error(){
-    echo "There is an error in $LINENo, command is: $BASH_COMMAND"
+# error(){
+#     echo "There is an error in $LINENo, command is: $BASH_COMMAND"
 
-}
+# }
 
-# trap  'echo "There is an error in $LINENo, command is: $BASH_COMMAND"' ERR
+trap  'echo "There is an error in $LINENo, command is: $BASH_COMMAND"' ERR
 
 echo "Hello"
 echo "Before error"
