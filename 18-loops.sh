@@ -27,29 +27,15 @@ else
 fi
 
 }
-
-dnf list installed mysql &>>$LOG_FILE
+for package in $@
+do
+dnf list installed $package &>>$LOG_FILE
 if [ $? -ne 0 ]; then 
-    dnf install mysql -y &>>$LOG_FILE
-    VALIDATE $? "MYSQL"
+    dnf install $package -y &>>$LOG_FILE
+    VALIDATE $? "$package"
 else 
-    echo -e "MYSQL is already installed ..$Y SKIPPING $N" | tee -a $LOG_FILE
+    echo -e "$package is already installed ..$Y SKIPPING $N" | tee -a $LOG_FILE
 fi 
+done
 
-dnf list installed redis &>>$LOG_FILE
-if [ $? -ne 0 ]; then 
-   dnf install redis -y &>>$LOG_FILE
-VALIDATE $? "REDIS"
-else 
-    echo -e "redis is already installed ..$Y SKIPPING $N" | tee -a $LOG_FILE
-fi 
-
-dnf list installed python3 &>>$LOG_FILE
-if [ $? -ne 0 ]; then 
-    dnf install python3 -y &>>$LOG_FILE
-    VALIDATE $? "PYTHON"
-
-else 
-    echo -e "python is already installed ..$Y SKIPPING $N" | tee -a $LOG_FILE
-fi 
 
